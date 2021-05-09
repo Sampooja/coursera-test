@@ -1,0 +1,105 @@
+body {
+  font-size: 16px;
+  color: rgba(34, 33, 33, 0.884);
+  background-color: #ffffff;
+  font-family: 'Oxygen Mono', monospace;
+  line-height: 1.2 !important;
+}
+
+#header-nav {
+  background-color: #999999;
+  min-height: 50px;
+}
+
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #000000;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list a {
+  color: #80bad1;
+  background: rgb(236, 236, 209);
+  border: 1px solid #6f44a0;
+  font-weight: bold;
+}
+
+#nav-list a:hover {
+  background: rgb(236, 236, 209);
+  opacity: 0.6;
+}
+
+#page-title {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#main-text {
+  align-items:center;
+  height:auto;
+  width: auto;
+  padding: 10px;
+  background-color: #999999;
+  margin-bottom:10px;
+  margin-top:10px;
+  margin-right:20px;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+section {
+  display: block;
+}
+
+.navbar-toggler{
+  color: black;
+}
+.navbar-toggler:hover{
+  background-color: #ffffff;
+}
+
+/********** Desktop version **********/
+@media (min-width: 992px) { 
+  .col-lg-4 {
+    width: 30% !important;
+    float: left;
+    padding: 15px;
+  }
+}
+
+/********** Tablet version **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.col-md-6,.col-md-12 {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-md-6 {
+    width: 47% !important;
+  }
+  
+  .col-md-12 {
+    width: 96% !important;
+  }
+}
+
+/********** Mobile version **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 96% !important;
+    float: left;
+    padding: 15px;
+  }
+}
