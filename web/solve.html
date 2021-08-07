@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+ <title>Scrambler and Solver</title>
+ <meta name=viewport content="width=device-width, initial-scale=1">
+ <meta name="author" content="Michael Feather"> 
+ <link rel="stylesheet" href="new.css">
+ <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+ <script src=AnimCube2.js></script>
+ <style>
+
+  div.wrap {
+    height:100%;
+    overflow:auto;
+    padding:8px 10%;
+  }
+  td {text-align:center}
+  p {margin:0; text-align: justify;}
+  .btn {
+    width:110px;
+    height:30px;
+    padding:0;
+    border:1px solid black;
+    border-radius:15px;
+    background-color:#ffffff;
+    outline:none;
+  } 
+  .inp {
+    border-radius:15px;
+    background-color:white;
+    width:46px;
+    height:26px;
+    padding:0px;
+    padding-left:8px;
+	border:1px solid black;
+    outline:none;
+  }
+  .btn2 {
+    border-radius:15px;
+    background-color:white;
+    border:1px solid black;
+    width:42px;
+    height:26px;
+    outline:none;
+  }
+  .btn:active {background-color: #aaaaaa;}
+  .btn2:active {background-color: #aaaaaa;}
+
+  .btn{
+      background-color:#25a185;
+  }
+  .inp{
+      background-color:#25a185;
+  } 
+ </style>
+</head>
+<body>   
+    <div>
+    <H1 align="center" style="font-family: Luckiest Guy; color: #ffffff; font-size: 4em;background-color:#25a185;border-radius: 8px; ">
+        <span style="font-size: 2em; margin:0 0 0 0;">R</span>ubik’s Mini Solution</H1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="firsec.html">FIRST TWO CORNER</a>
+          <a href="thr.html">THIRD CORNER</a>
+          <a href="fou.html">FOURTH CORNER</a>
+          <a href="fiv.html">SOLVING YELLOW SIDE</a>
+          <a href="si.html">FULL CUBE SOLVED</a>
+          <a class="ac" href="solve.html">Let's Solve</a>
+          <div class="animation start-home"></div>
+        </nav>
+<div class=wrap>
+<center>
+
+<table>
+ <tr>
+  <td> 
+   <div id=cube style="width:400px;height:400px"></div>
+  </td>
+ </tr>
+ <tr height=10>
+</table>
+<table>
+ <tr>
+  <td> <button class=btn onclick="newCube(1)"style="color: white;">Scramble</button> </td>
+  <td width=20>
+  <td> <button class=btn onclick="newCube(0)"style="color: white;">Reset</button> </td>
+ </tr>
+ <tr height=12>
+ <tr>
+  <td colspan=3>Scrambling moves: <br><input id=inp class=inp onchange="newCube(1)" value=5 style="text-align:center;color: white;"> </td>
+ </tr>
+</table>
+
+
+<script>
+var removeListeners = [];
+var params = 'id=cube&bgcolor=ffffff&edit=1&snap=1&repeat=0&colorscheme=WYGBOR&buttonheight=18';
+AnimCube2(params);
+function newCube(cmd) {
+  var p = params;
+  var n = document.getElementById('inp').value;
+  var div = document.getElementById('cube');
+  if (isNaN(n))
+    n = 5;
+  if (cmd == 1)
+    p += '&move=random&initrevmove=#&randmoves=' + n;
+  removeListeners['cube']();
+  AnimCube2(p);
+}
+</script></center>
+</div></div>
+</body>
+</html>

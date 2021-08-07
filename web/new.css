@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.cube {display: inline-block}
+
+.ac{
+background-color: #34495e;
+border-radius: 8px;
+  }
+
+a:hover {
+	background-color: #ffffff;
+	border-radius: 8px;
+	color:#25a185 ;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #ffffff;
+	padding-left:50px;
+	padding-right:50px;
+	font-weight: bolder;
+}
+nav{
+	position: relative;
+	margin:  auto;
+	width: 1050PX;
+	height: 50px;
+	background: #25a185;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+	
+}
+ul.li{
+	position: relative;
+	margin:  auto;
+	width: 20PX;
+	height: 50px;
+	background: #25a185;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);		
+}
+
+nav a,ul a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+/* height: 5px; *//* bottom: 0; */
+/*nav .animation{
+	position: absolute;
+	height: 100%;
+	
+	top: 0;
+	
+	z-index: 0;
+	background: #34495e;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}*/
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 200px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 150px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 200px;
+	left: 200px;
+}
+nav a:nth-child(3){
+	width: 150px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 200px;
+	left: 400px;
+}
+nav a:nth-child(4){
+	width: 150px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 200px;
+	left: 600px;
+}
+nav a:nth-child(5){
+	width: 200px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 200px;
+	left: 800px;
+}
+nav a:nth-child(6){
+	width: 150px;
+}
+nav a:nth-child(6):hover~.animation{
+	width: 200px;
+	left: 1000px;
+}
+nav a:nth-child(7){
+	width: 150px;
+}
+nav a:nth-child(7):hover~.animation{
+	width: 200px;
+	left: 1200px;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.cube {display: inline-block}
+
+a:active {
+background-color: #34495e;
+border-radius: 8px;
+  }
+
+a:hover {
+	background-color: #34495e;
+	border-radius: 8px;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #ffffff;
+}
+nav{
+	position: relative;
+	margin:  auto;
+	width: 70%;
+	height: 50px;
+	background: #25a185;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+	font-size: 15px;
+    width: auto;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
